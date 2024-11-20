@@ -3,7 +3,7 @@ import axios from "axios";
 async function onEdit(postId, updatedPost) {
   try {
     const response = await axios.post(
-      "https://blogapp-prod-production.up.railway.app/edit",
+      "https://blogapp-backend-production-bf38.up.railway.app/edit",
       {
         id: postId,
         ...updatedPost,

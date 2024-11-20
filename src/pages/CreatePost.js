@@ -83,7 +83,7 @@ function CreatePost() {
     // Here you can call your API to create a new post
     try {
       const response = await axios.post(
-        "https://blogapp-prod-production.up.railway.app/post",
+        "https://blogapp-backend-production-bf38.up.railway.app/post",
         data,
 
         {

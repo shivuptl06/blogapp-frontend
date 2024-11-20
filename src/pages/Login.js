@@ -23,7 +23,7 @@ function Auth() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://blogapp-prod-production.up.railway.app/login",
+        "https://blogapp-backend-production-bf38.up.railway.app/login",
         { username, password },
         {
           headers: { "Content-Type": "application/json" },

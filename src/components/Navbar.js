@@ -21,7 +21,7 @@ function Navbar() {
     const fetchProfile = async () => {
       try {
         const res = await axios.get(
-          "https://blogapp-prod-production.up.railway.app/profile",
+          "https://blogapp-backend-production-bf38.up.railway.app/profile",
           {
             withCredentials: true,
           }
@@ -52,7 +52,7 @@ function Navbar() {
   function logOut() {
     axios
       .post(
-        "https://blogapp-prod-production.up.railway.app/logout",
+        "https://blogapp-backend-production-bf38.up.railway.app/logout",
         {},
         {
           withCredentials: true,
