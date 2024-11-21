@@ -47,12 +47,12 @@ function Navbar() {
     };
 
     fetchProfile();
-  }, [setUsername, navigate]);
+  }, [setUsername]);
 
   function logOut() {
     axios
       .post(
-        "https://blogapp-backend-production-bf38.up.railway.app/logout",
+        "https://blogapp-prod-production.up.railway.app/logout",
         {},
         {
           withCredentials: true,
