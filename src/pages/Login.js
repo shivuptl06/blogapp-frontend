@@ -23,14 +23,14 @@ function Auth() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://blogapp-backend-production-bf38.up.railway.app/login",
+        "https://blogapp-prod-production.up.railway.app/login",
         { username, password },
         {
           headers: { "Content-Type": "application/json" },
           withCredentials: true,
         }
       );
-
+      console.log(response);
       setUsername(username); // Update UserContext with username
       setIsAuthenticated(true);
       toast.success("User Login Successful", { autoClose: 500 });

@@ -21,7 +21,7 @@ function Navbar() {
     const fetchProfile = async () => {
       try {
         const res = await axios.get(
-          "https://blogapp-backend-production-bf38.up.railway.app/profile",
+          "https://blogapp-prod-production.up.railway.app/profile",
           {
             withCredentials: true,
           }

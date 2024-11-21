@@ -37,7 +37,7 @@ function SearchResults() {
     setLoading(true);
     try {
       const response = await axios.post(
-        "https://blogapp-backend-production-bf38.up.railway.app/search/users",
+        "https://blogapp-prod-production.up.railway.app/search/users",
         {
           query: searchParams.toLocaleLowerCase(),
         }
@@ -69,7 +69,7 @@ function SearchResults() {
     console.log("Data Retrieved in SR: ", profileData.username); //✅
     //alert(`Profile.Username: ${profileData.username}`);
     const response = await axios.post(
-      "https://blogapp-backend-production-bf38.up.railway.app/follow",
+      "https://blogapp-prod-production.up.railway.app/follow",
       {
         currentUsername: username,
         userToFollow: profileData.username,
@@ -81,7 +81,7 @@ function SearchResults() {
     //alert("REACHED HANDLE REMOVE IN SD")
     try {
       await axios.post(
-        "https://blogapp-backend-production-bf38.up.railway.app/unfollow",
+        "https://blogapp-prod-production.up.railway.app/unfollow",
         {
           currentUsername: username,
           userToUnfollow: profileData.username,
