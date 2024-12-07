@@ -17,6 +17,7 @@ function Auth() {
 
   useEffect(() => {
     setIsAnimated(true);
+toast.info("Use 'admin' as both username and password to log in.", { autoClose: 3000 });
   }, []);
 
   async function login(e) {
